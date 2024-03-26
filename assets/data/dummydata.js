@@ -172,3 +172,30 @@ export const teamdata = [
     post: "",
   },
 ]
+
+export const brand = [
+  {
+    id: 1,
+    cover: "../images/l1.svg",
+  },
+  {
+    id: 2,
+    cover: "../images/l2.svg",
+  },
+  {
+    id: 3,
+    cover: "../images/l3.svg",
+  },
+  {
+    id: 4,
+    cover: "../images/l4.svg",
+  },
+  {
+    id: 5,
+    cover: "../images/l5.svg",
+  },
+  {
+    id: 6,
+    cover: "../images/l6.svg",
+  },
+]
