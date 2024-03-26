@@ -24,28 +24,24 @@ export const home = [
 export const expertise = [
   {
     id: 1,
-    title: "Web Design & Development",
-    cover: "../images/e1.jpg",
-    desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
+    title: "Editing",
+    cover: "../images/e5.jpg",
+    desc: [{ text: "Top-tier editing" }, { text: "Unique buisness solutions" }, { text: "Experienced editors" }],
   },
+  
   {
     id: 2,
     title: "Digital Marketing",
     cover: "../images/e2.jpg",
-    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
+    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }],
   },
   {
     id: 3,
-    title: "E-Commerce",
-    cover: "../images/e3.jpg",
-    desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
-  },
-  {
-    id: 4,
     title: "Branding & Creative Services",
     cover: "../images/e4.jpg",
     desc: [{ text: "Visual identity" }, { text: "Branding for social media" }, { text: "Custom illustrations" }],
   },
+ 
 ]
 export const testimonial = [
   {
@@ -115,61 +111,16 @@ export const showcase = [
     catgeory: "WEBSITES	",
   },
 ]
-export const brand = [
-  {
-    id: 1,
-    cover: "../images/l1.svg",
-  },
-  {
-    id: 2,
-    cover: "../images/l2.svg",
-  },
-  {
-    id: 3,
-    cover: "../images/l3.svg",
-  },
-  {
-    id: 4,
-    cover: "../images/l4.svg",
-  },
-  {
-    id: 5,
-    cover: "../images/l5.svg",
-  },
-  {
-    id: 6,
-    cover: "../images/l6.svg",
-  },
-]
+
 export const blogdata = [
   {
     id: 1,
-    title: "Ligula vel urna accumsan placerat",
+    title: "Elevate Your Business: Unleash the Power of Expert Editing and Strategic Marketing    ",
     cover: "../images/b1.webp",
-    catgeory: "INDUSTRY",
-    date: "JANUARY 12, 2023",
+    catgeory: "About Us",
+    date: "March 22,2024",
   },
-  {
-    id: 2,
-    title: "Don’t underestimate the lorem ipsum dolor amet",
-    cover: "../images/b2.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 20, 2023",
-  },
-  {
-    id: 3,
-    title: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
-    cover: "../images/b3.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 9, 2023",
-  },
-  {
-    id: 4,
-    title: "What eleifend posuere tincidunt",
-    cover: "../images/b4.jpg",
-    catgeory: "EVENTS",
-    date: "OCTOBER 8, 2023",
-  },
+  
 ]
 export const teamdata = [
   {

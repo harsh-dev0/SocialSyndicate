@@ -182,7 +182,7 @@ footer {
     }
   }
   .connect {
-    @include flex(center, space-between, none);
+    @include flex(center, items-center, none);
     span {
       font-size: $sm;
       letter-spacing: 2px;

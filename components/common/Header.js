@@ -13,25 +13,22 @@ const Header = () => {
   useEffect(() => {
     setActiveLink(router.pathname)
   }, [router.pathname])
+
   return (
     <>
       <header>
         <div className='container'>
           <div className='logo'>
             <Link href='/'>
-              <TitleLogo title='creative' caption='7' className='logomin' />
+              <TitleLogo title='Syndicate' caption='Social' className='logomin' />
             </Link>
           </div>
           <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(null)}>
             <Link href='/' className={activeLink == "/" ? "activeLink" : "none"}>
               Home
             </Link>
-            <Link href='/agency' className={activeLink == "/agency" ? "activeLink" : "none"}>
-              Agency
-            </Link>
-            <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
-              Team
-            </Link>
+            
+            
             <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>
               Services
             </Link>
@@ -44,11 +41,23 @@ const Header = () => {
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
             </Link>
-            <button className='button-primary'>book a consultation</button>
           </nav>
-          <button onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
+          {/* Button will only be visible for screens with a width less than or equal to 768px */}
+          <button className="menuButton" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>
       </header>
+
+      <style jsx>{`
+        .menuButton {
+          display: none;
+        }
+        
+        @media (max-width: 768px) {
+          .menuButton {
+            display: block;
+          }
+        }
+      `}</style>
     </>
   )
 }
