@@ -6,6 +6,7 @@
   height: 90vh !important;
   overflow: hidden !important;
   position: relative;
+  
   &::before {
     content: "";
     position: absolute;
@@ -19,27 +20,53 @@
     z-index: -1;
     overflow-x: hidden !important;
   }
+  
   .hero-title {
     font-size: $xll-3;
     line-height: 115px;
     font-weight: 600;
     margin: $xl-6 0;
   }
+  
   .sub-heading {
     display: flex;
     justify-content: center;
+    
     .titleSm {
       margin: 0 $xl-1;
     }
+    
     span {
       font-size: $xll;
       line-height: 0;
       color: $green;
     }
   }
+  
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    padding-top: $xl-4; // Adjust top padding for smaller screens
+    height: auto; // Remove fixed height for smaller screens
+    
+    .hero-title {
+      font-size: $xl-5; // Adjust font size for smaller screens
+      line-height: 100px; // Adjust line height for smaller screens
+    }
+    
+    .sub-heading {
+      flex-direction: column; // Stack sub-heading items vertically on smaller screens
+      align-items: center; // Center sub-heading items on smaller screens
+      
+      .titleSm {
+        margin: $xl-1 0; // Adjust margin for smaller screens
+      }
+    }
+  }
 }
+
 .hero-sec {
   position: relative;
+  
   &::before {
     content: "";
     position: absolute;
@@ -52,6 +79,7 @@
     filter: blur(20px);
   }
 }
+
 
 // expertise
 .expertise {

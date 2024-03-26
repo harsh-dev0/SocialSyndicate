@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='Syndicate' caption='Social' className='logobg' />
+              <TitleLogo title='Syndicate' caption='Social' className='logomin' />
               <br />
               <span>© 2024 SOCIAL SYNDICATE. ALL RIGHTS RESERVED.</span>
             </div>
